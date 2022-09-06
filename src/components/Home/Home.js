@@ -1,6 +1,12 @@
+import Quotes from "./Quotes/Quotes";
+
 function Home() {
     return (
-        <h1>Home Page</h1>
+        <>
+            <div className="home__div">
+                <Quotes />
+            </div>
+        </>
     );
 }
 

@@ -1,0 +1,74 @@
+:root {
+    --voilet: hsl(297, 100%, 11%);
+    --maroon: hsl(317, 40%, 16%);
+    --dark-pink: hsl(306, 98%, 16%);
+    --dark-grey: hsl(220, 24%, 24%);
+    --light-grey: hsl(194, 11%, 58%);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    border-bottom: 2px solid var(--light-grey);
+    border-radius: 100%;
+    border-color: var(--dark-grey);
+    margin: 0;
+    padding: 0;
+}
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: 3px solid var(--light-grey);
+    border-radius: 50%;
+    border-top-color: var(--dark-pink);
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    margin-top: 3rem;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.quote__div {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    margin-inline: 4rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--light-grey);
+    box-shadow: 0 0 10px 0 var(--dark-grey);
+}
+
+.quote__author {
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--light-grey);
+    margin: 1rem;
+    text-align: right;
+}
+
+@media (max-width: 50em) {
+    .quote__div {
+        font-size: 1rem;
+        margin-inline: 2rem;
+    }
+
+    .quote__author {
+        font-size: 0.8rem;
+    }
+}

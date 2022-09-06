@@ -57,6 +57,7 @@ body {
 .nav-links:hover {
     border-bottom: 1px solid var(--light-grey);
     animation: all 0.5s ease-in-out;
+    color: hsl(194, 11%, 98%);
 }
 
 @media screen and (max-width: 50em) {
@@ -81,9 +82,9 @@ body {
     }
 
     .nav-links:hover {
-        background-color: var(--dark-pink);
-        border-radius: 0.5rem;
-        box-shadow: 0rem 0rem .5rem .5rem var(--dark-grey);
+        border-bottom: 1px solid var(--light-grey);
+        animation: all 0.5s ease-in-out;
+        color: hsl(194, 11%, 98%);
     }
 
     .menu-icon {
