@@ -35,11 +35,14 @@ h3 {
     height: 2rem;
     margin-bottom: 1rem;
     border-radius: .5em;
+    text-align: center;
+    color: var(--white);
 }
 
 .message {
     border: 2px solid var(--white);
     background-color: var(--secondary);
+    color: var(--white);
     border-radius: .5rem;
     font-size: 1.4rem;
     font-weight: 500;
@@ -95,4 +98,45 @@ h3 {
 .submit:hover {
     border: 2px solid var(--sea-blue);
     box-shadow: 0 0 0.5rem 0.1rem var(--sea-blue);
+}
+
+@media screen and (max-width: 50em) {
+
+    .name,
+    .contact {
+        width: 10rem;
+    }
+
+    .message {
+        width: 12rem;
+    }
+
+    .submit {
+        font-size: .8rem;
+        margin-top: 1rem;
+        width: 8rem;
+    }
+
+    .checkbox {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    .checkbox input {
+        margin: .1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: .5rem;
+    }
+
+    .checkbox label {
+        font-size: 1rem;
+        margin-left: 3rem;
+    }
+
+    .container {
+        font-size: .5rem;
+    }
 }
