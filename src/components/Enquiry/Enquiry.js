@@ -1,7 +1,12 @@
+import "./Enquiry.css";
+
 function Enquiry() {
-    return (
-        <h1>Enquiry Page</h1>
-    );
+  return (
+    <>
+      <div className="enquiry">
+      </div>
+    </>
+  );
 }
 
 export default Enquiry;

@@ -1,17 +1,22 @@
 :root {
-    --voilet: hsl(297, 100%, 11%);
-    --maroon: hsl(317, 40%, 16%);
+    /* --secondary: hsl(297, 100%, 11%);
+    --primary: hsl(317, 40%, 16%);
     --dark-pink: hsl(306, 98%, 16%);
-    --dark-grey: hsl(220, 24%, 24%);
-    --light-grey: hsl(194, 11%, 58%);
+    --sea-blue: hsl(220, 24%, 24%);
+    --white: hsl(194, 11%, 78%); */
+
+    --secondary: #393E46;
+    --primary: #222831;
+    --dark-pink: #00ADB5;
+    --white: hsl(0, 10%, 53%);
 }
 
 h2 {
     font-size: 2.5rem;
     font-weight: 100;
-    border-bottom: 2px solid var(--light-grey);
+    border-bottom: 2px solid var(--white);
     border-radius: 100%;
-    border-color: var(--dark-grey);
+    border-color: var(--sea-blue);
     margin: 0;
     padding: 0;
 }
@@ -22,9 +27,9 @@ h2 {
     height: 50px;
     margin: 0;
     padding: 0;
-    border: 3px solid var(--light-grey);
+    border: 3px solid var(--white);
     border-radius: 50%;
-    border-top-color: var(--dark-pink);
+    border-top-color: var(--sea-blue);
     animation: spin 1s ease-in-out infinite;
     -webkit-animation: spin 1s ease-in-out infinite;
     margin-top: 3rem;
@@ -49,15 +54,22 @@ h2 {
     padding: 2rem;
     font-size: 1.2rem;
     line-height: 1.2;
-    font-weight: 500;
-    color: var(--light-grey);
-    box-shadow: 0 0 10px 0 var(--dark-grey);
+    font-weight: 100;
+    color: var(--white);
+    box-shadow: 0 0 10px 0 var(--white);
+}
+
+.quote {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .quote__author {
     font-size: 1rem;
     font-weight: 100;
-    color: var(--light-grey);
+    color: var(--white);
     margin: 1rem;
     text-align: right;
 }
