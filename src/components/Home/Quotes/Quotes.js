@@ -8,37 +8,6 @@ function Quotes() {
   const [quoteAuthor, setQuoteAuthor] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // const url = process.env.REACT_APP_url;
-  // const key = process.env.REACT_APP_X_RapidAPI_Key;
-  // const host = process.env.REACT_APP_X_RapidAPI_Host;
-
-  // useEffect(() => {
-  //   setLoading(true);
-  //   const options = {
-  //     method: "GET",
-  //     url: "https://quotes15.p.rapidapi.com/quotes/random/",
-  //     params: { language_code: "en" },
-  //     headers: {
-  //       "X-RapidAPI-Key": key,
-  //       "X-RapidAPI-Host": host,
-  //     },
-  //   };
-
-  //   axios
-  //     .request(options)
-  //     .then(function (response) {
-  //       setQuoteAuthor(response.data.originator.name);
-  //       setQuotes(response.data.content);
-  //       console.log(quotes);
-  //       console.log(quoteAuthor);
-  //       setLoading(false);
-  //     })
-  //     .catch(function (error) {
-  //       console.error(error);
-  //       setLoading(false);
-  //     });
-  // }, []);
-
   useEffect(() => {
     setLoading(true);
     axios
@@ -49,7 +18,6 @@ function Quotes() {
         setLoading(false);
       })
       .catch((err) => {
-        console.log(quotes);
         setLoading(false);
       });
   }, []);

@@ -1,13 +1,13 @@
 :root {
     /* --secondary: hsl(297, 100%, 11%);
     --primary: hsl(317, 40%, 16%);
-    --dark-pink: hsl(306, 98%, 16%);
+    --sea-blue: hsl(306, 98%, 16%);
     --sea-blue: hsl(220, 24%, 24%);
     --white: hsl(194, 11%, 78%); */
 
     --secondary: #393E46;
     --primary: #222831;
-    --dark-pink: #00ADB5;
+    --sea-blue: #00ADB5;
     --white: #EEEEEE;
 }
 
