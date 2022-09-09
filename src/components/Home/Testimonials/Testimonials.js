@@ -8,13 +8,14 @@ export default function Testimonials() {
       <div className="testimonials__container">
         <div className="testimonials">
           <Carousel
-            autoPlay
-            infiniteLoop
+            className="c"
+            // autoPlay
+            // infiniteLoop
             showThumbs={false}
             showStatus={false}
             showArrows={false}
-            swipeable={true}
-            interval={5000}
+            swipeable={false}
+            // interval={5000}
           >
             <div className="carousel">
               <div className="myCarousel">

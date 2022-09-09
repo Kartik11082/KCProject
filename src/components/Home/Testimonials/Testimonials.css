@@ -57,3 +57,12 @@ h2 {
         margin: 0;
     }
 }
+
+.c {
+    /* border: 1px solid var(--white); */
+    padding: 0;
+}
+
+.carousel .control-dots {
+    top: 11px;
+}

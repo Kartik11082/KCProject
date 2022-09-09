@@ -25,3 +25,8 @@ yarn-error.log*
 
 # Firebase Config File
 FBConfig.js
+
+# Firebase files
+.firebase/
+.firebaserc
+firebase.json
