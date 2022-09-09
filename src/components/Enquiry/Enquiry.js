@@ -12,12 +12,10 @@ function Enquiry() {
   });
 
   const hName = (event) => {
-    // console.log(name);
     setName(event.target.value);
   };
 
   const hContact = (event) => {
-    // console.log(contact);
     setContact(event.target.value);
   };
 
@@ -28,7 +26,6 @@ function Enquiry() {
   const hCourses = (event) => {
     const { value, checked } = event.target;
     const { languages } = courses;
-    // console.log(`${value} is ${checked}`);
 
     if (checked) {
       setCourses({
@@ -43,7 +40,6 @@ function Enquiry() {
 
   const submitQuery = (event) => {
     event.preventDefault();
-    // const msg = `${name}, ${contact}, ${message}, ${courses.languages}`;
     const date = new Date().toString();
     const node = name + "==>" + date;
     const reference = ref(db, "query/" + node);

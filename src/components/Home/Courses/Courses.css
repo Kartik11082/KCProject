@@ -40,3 +40,28 @@
 .course__detail:hover {
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 50em) {
+    .courses__section {
+        margin: 2rem;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .courses__title {
+        font-size: 1rem;
+    }
+
+    .course__detail {
+        font-size: 1rem;
+    }
+
+    .course__detail:hover {
+        transform: scale(1);
+    }
+
+    .accordion__heading {
+        margin: 0;
+        width: 90%;
+    }
+}
