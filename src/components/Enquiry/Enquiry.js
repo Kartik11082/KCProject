@@ -43,12 +43,23 @@ function Enquiry() {
 
   const submitQuery = (event) => {
     event.preventDefault();
-    const msg = `${name}, ${contact}, ${message}, ${courses.languages}`;
+    // const msg = `${name}, ${contact}, ${message}, ${courses.languages}`;
     const date = new Date().toString();
     const node = name + "==>" + date;
     const reference = ref(db, "query/" + node);
+    if (courses.languages.length === 0) {
+      alert("Please select atleast one course");
+      window.location.reload();
+    }
     const data = { name, contact, message, courses, date };
-    set(reference, data);
+    set(reference, data)
+      .then(() => {
+        alert("We will get back to you soon");
+        window.location.reload();
+      })
+      .catch((error) => {
+        alert("Error: " + error);
+      });
     setContact("");
     setName("");
     setMessage("");
@@ -82,13 +93,14 @@ function Enquiry() {
             placeholder="Query"
             onChange={hMessage}
             value={message}
+            required
           />
           <h3>Interested courses</h3>
           <div>
             <div className="checkbox">
               <label className="container">
                 <span className="checkmark" />
-                <input type="checkbox" value="Python" onChange={hCourses}/>
+                <input type="checkbox" value="Python" onChange={hCourses} />
                 Python
               </label>
               <label className="container">

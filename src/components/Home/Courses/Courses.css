@@ -1,0 +1,29 @@
+:root {
+    /* --secondary: hsl(297, 100%, 11%);
+    --primary: hsl(317, 40%, 16%);
+    --sea-blue: hsl(306, 98%, 16%);
+    --sea-blue: hsl(220, 24%, 24%);
+    --white: hsl(194, 11%, 78%); */
+
+    --secondary: #393E46;
+    --primary: #222831;
+    --sea-blue: #00ADB5;
+    --white: #EEEEEE;
+}
+
+.courses__section {
+    margin-inline: 4rem;
+}
+
+.courses__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.courses__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

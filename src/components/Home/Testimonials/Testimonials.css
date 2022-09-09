@@ -1,0 +1,59 @@
+:root {
+    /* --secondary: hsl(297, 100%, 11%);
+    --primary: hsl(317, 40%, 16%);
+    --sea-blue: hsl(306, 98%, 16%);
+    --sea-blue: hsl(220, 24%, 24%);
+    --white: hsl(194, 11%, 78%); */
+
+    --secondary: #393E46;
+    --primary: #222831;
+    --sea-blue: #00ADB5;
+    --white: #EEEEEE;
+}
+
+h2 {
+    padding-inline: 2rem;
+    margin: 0 0 3rem 0;
+    padding-bottom: 0;
+    text-align: center;
+    border-bottom: 2px solid var(--white);
+    border-radius: 100%;
+    border-color: var(--sea-blue);
+}
+
+.myCarousel {
+    color: White;
+    box-shadow: 0 0 1rem var(--white);
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-inline: 6rem;
+    padding: 2rem;
+    background-image: url(./assets/tbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .myCarousel {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .myCarousel h2 {
+        padding: 0;
+        margin: 0;
+    }
+}

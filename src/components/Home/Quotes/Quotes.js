@@ -25,7 +25,7 @@ function Quotes() {
   return (
     <>
       <div className="quote__div">
-        <h2>Quote of the day</h2>
+        <h2 className="title">Quote of the day</h2>
         {loading && <div className="loader"></div>}
         <div className="quote">{quotes}</div>
         <div className="quote__author">
